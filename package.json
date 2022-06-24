@@ -1,11 +1,12 @@
 {
-  "name": "birdy",
-  "version": "0.1.0",
-  "private": true,
+  "name": "birdy-ui-test",
+  "version": "0.1.2",
+  "private": false,
   "scripts": {
     "serve": "vue-cli-service serve",
     "build": "vue-cli-service build",
-    "lint": "vue-cli-service lint"
+    "lint": "vue-cli-service lint",
+    "lib": "vue-cli-service build --target lib ./src/components/index.js --dest birdyUi name birdyUi"
   },
   "dependencies": {
     "core-js": "^3.6.5",
@@ -25,6 +26,7 @@
     "eslint-plugin-vue": "^7.0.0",
     "sass": "^1.26.5",
     "sass-loader": "^8.0.2"
+    
   },
   "eslintConfig": {
     "root": true,
@@ -44,5 +46,13 @@
     "> 1%",
     "last 2 versions",
     "not dead"
-  ]
+  ],
+  "description": "## Project setup ``` yarn install ```",
+  "main": "birdyUi/birdy-ui-test.umd.js",
+  "keywords": [
+    "前端",
+    "ui"
+  ],
+  "author": "吴政",
+  "license": "ISC"
 }
